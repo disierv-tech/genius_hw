@@ -202,7 +202,57 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <!-- Тут буде форма ще -->
+              <form name="modal-form" autocomplete="on" novalidate>
+                <div class="form-field">
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Ім'я"
+                  />
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Ім'я</label
+                  >
+                </div>
+                <div class="form-field">
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                </div>
+                <div class="form-field">
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Електронна пошта"
+                  />
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                </div>
+
+                <button class="form-button button" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-button-description">
+                  Натискаючи на кнопку я погоджуюсь з
+                  <a
+                    class="form-button-description-link"
+                    href="#"
+                    target="_blank"
+                    >політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -287,19 +337,51 @@
         <h2>Замовити дзвінок</h2>
         <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
         <form name="contact-form" autocomplete="on" novalidate>
-          <label for="user-name">Ім'я</label>
-          <input type="text" id="user-name" name="user-name" />
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Ім'я"
+            />
+            <label class="form-label visually-hidden" for="user-name"
+              >Ім'я</label
+            >
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+            />
+            <label class="form-label visually-hidden" for="user-tel"
+              >Телефон</label
+            >
+          </div>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Електронна пошта"
+            />
+            <label class="form-label visually-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+          </div>
 
-          <label for="user-tel">Телефон</label>
-          <input type="tel" id="user-tel" name="user-tel" />
-
-          <label for="user-email">Електронна пошта</label>
-          <input type="email" id="user-email" name="user-email" />
-
-          <button type="submit">Замовити дзвінок</button>
-          <p>
+          <button class="form-button button" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-button-description">
             Натискаючи на кнопку я погоджуюсь з
-            <a href="#" target="_blank">політикою конфіденційності</a>
+            <a class="form-button-description-link" href="#" target="_blank"
+              >політикою конфіденційності</a
+            >
           </p>
         </form>
       </div>
