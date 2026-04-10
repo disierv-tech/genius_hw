@@ -1,0 +1,31 @@
+.format-cards {
+  height: 444px;
+  padding: 24px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    #31261a 100%
+  );
+  border: 1px solid lightgray;
+  border-radius: 16px;
+  transition: transform 0.3s;
+}
+
+.format-cards:hover {
+  transform: scale(1.05);
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.formats-text {
+  font-size: 14px;
+  font-weight: 300;
+}

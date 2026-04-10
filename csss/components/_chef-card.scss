@@ -1,0 +1,21 @@
+.chef-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.chef-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow:
+    -16px 16px 0 0 var(--coror-primary-light),
+    -16px 16px 0 2px var(--color-secondary-brawn);
+}
