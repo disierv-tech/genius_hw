@@ -1,0 +1,35 @@
+.input {
+  position: relative;
+  margin-bottom: 32px;
+
+  &__control {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.17;
+    border-radius: 8px;
+    border: 1px solid var(--coror-primary-dark);
+    background-color: transparent;
+
+    &:focus {
+      border-color: var(--coror-brand-light);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-secondary-brawn);
+      font-size: 16px;
+      line-height: 1.17;
+    }
+
+    &:focus::placeholder {
+      color: var(--coror-primary-dark);
+    }
+  }
+
+  &__label {
+    display: block;
+    font-size: 16px;
+    line-height: 1.17;
+  }
+}

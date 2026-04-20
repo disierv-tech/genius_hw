@@ -1,35 +1,54 @@
-.chefs-title {
-  position: relative;
-  margin: 0 auto 80px;
-}
+.chefs-section {
+  &__title {
+    position: relative;
+    margin: 24px;
+    &::before,
+    &::after {
+      position: absolute;
+      bottom: 23px;
+      content: "";
+      width: 352px;
+      border: 2px solid #cfcfbc;
 
-.chefs-title::before,
-.chefs-title::after {
-  position: absolute;
-  bottom: 23px;
-  content: "";
-  width: 352px;
-  border: 2px solid #cfcfbc;
-}
+      @media screen and (min-width: $bp-tablet) {
+        margin: 0 auto 80px;
+      }
+    }
 
-.chefs-title::before {
-  left: 0;
-}
+    &::after {
+      display: none;
 
-.chefs-title::after {
-  right: 0;
-}
+      @media screen and (min-width: $bp-tablet) {
+        display: block;
+        right: 0;
+      }
+    }
 
-.chef-title {
-  margin-bottom: 16px;
-  font-size: 40px;
-  font-weight: 600;
-}
+    &::before {
+      display: none;
 
-.chef-text p {
-  margin-bottom: 28px;
-}
+      @media screen and (min-width: $bp-tablet) {
+        display: block;
+        left: 0;
+      }
+    }
+  }
 
-.chef-text p:last-child {
-  margin-bottom: 0;
+  &__item {
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 40px 30px;
+    }
+  }
 }

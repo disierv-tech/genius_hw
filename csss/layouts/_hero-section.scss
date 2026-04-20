@@ -1,5 +1,5 @@
 .hero-section {
-  padding: 272px;
+  padding: 124px 0;
   background-image:
     linear-gradient(
       127deg,
@@ -12,12 +12,44 @@
   background-position: center top;
   background-size: cover;
 
+  @media screen and (min-width: $bp-desctop) {
+    padding: 272px 0;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(
+        127deg,
+        rgba(18, 18, 17, 0.78) 0%,
+        rgba(18, 18, 17, 0.6) 63.89%,
+        rgba(18, 18, 17, 0) 100%
+      ),
+      url("../images/header-background-2х.jpg");
+  }
+
   &__title {
     color: var(--coror-primary-light);
     font-family: poppins, sans-serif;
     font-weight: 900;
-    font-size: 128px;
+    font-size: 67px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 48px;
+    line-height: 1;
+
+    @media screen and (min-width: $bp-desctop) {
+      margin-bottom: 0;
+      font-size: 128px;
+      line-height: 1.5;
+    }
+  }
+
+  &__button {
+    margin: 0 auto;
+
+    @media screen and (min-width: $bp-desctop) {
+      display: none;
+    }
   }
 }

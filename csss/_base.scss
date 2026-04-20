@@ -8,11 +8,15 @@ body {
   color: var(--coror-primary-dark);
   background-color: var(--coror-primary-light);
   font-family: poppins, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.5;
-
   margin: 0;
+
+  @media screen and (min-width: $bp-desctop) {
+    font-size: 18px;
+    font-weight: 400;
+  }
 }
 
 h1,
@@ -22,6 +26,12 @@ h4,
 h5,
 P {
   margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a {

@@ -9,23 +9,14 @@
   );
   border: 1px solid lightgray;
   border-radius: 16px;
-  transition: transform 0.3s;
-}
 
-.format-cards:hover {
-  transform: scale(1.05);
-}
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
 
-.formats-item {
-  flex-basis: calc((100% - 40px) / 3);
-}
-
-.format-title {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.formats-text {
-  font-size: 14px;
-  font-weight: 300;
+  &__text {
+    font-size: 14px;
+    font-weight: 300;
+  }
 }

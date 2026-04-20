@@ -2,8 +2,12 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 32px;
+  padding-top: 16px;
   width: 100%;
+
+  @media screen and (min-width: $bp-desctop) {
+    padding-top: 32px;
+  }
 
   &__container {
     display: flex;
@@ -19,9 +23,36 @@
   }
 
   &__menu {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
+    display: none;
+
+    @media screen and (min-width: $bp-desctop) {
+      display: none;
+      display: flex;
+      gap: 64px;
+      flex-grow: 1;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: $bp-desctop) {
+      display: block;
+    }
+  }
+
+  &__burger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    fill: var(--coror-primary-light);
+
+    @media screen and (min-width: $bp-desctop) {
+      display: none;
+    }
   }
 }

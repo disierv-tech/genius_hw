@@ -1,0 +1,13 @@
+.form-button-description {
+  max-width: 220px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+
+  &__link {
+    color: var(--coror-primary-dark);
+    text-underline-offset: 2px;
+  }
+}
